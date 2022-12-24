@@ -14,7 +14,7 @@ func getRandFile() string {
 		panic(err)
 	}
 
-	n := rand.Intn(len(d) + 1)
+	n := rand.Intn(len(d)+1) - 1
 
 	s := "http://localhost:8080/music/" + d[n].Name()
 
